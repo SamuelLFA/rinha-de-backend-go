@@ -1,0 +1,22 @@
+@url = http://localhost:9999
+
+
+### Create pessoa
+POST {{url}}/pessoas HTTP/1.1
+Content-type: application/json
+
+{
+    "apelido": 2,
+    "nome": "Samuel",
+    "nascimento": "1997-01-01",
+    "stack": ["Node"]
+}
+
+### Get pessoas
+GET {{url}}/pessoas HTTP/1.1
+
+### Get pessoa
+GET {{url}}/pessoas/c1fc9fcf-9c0f-48c7-80a2-8c8aa29ccdd2 HTTP/1.1
+
+### Get pessoa
+GET {{url}}/contagem-pessoas
